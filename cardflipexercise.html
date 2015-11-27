@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Card Flip Exercise</title>
+	<style>
+
+	.card {
+		width: 400px;
+		height: 600px;
+		border-radius: 10px;
+		border: 2px solid black;
+	}
+
+	.front, .back {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition: transform 0.5s;
+		border-radius: 10px;
+	}
+
+	.front {
+		background-color: pink;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="front">
+			<h1>2</h1>
+			<img src="heart.ico"/>
+		</div>
+
+		<div class="back">
+		
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vertical Fun</title>
+	<style>
+
+	.container {
+		width: 600px;
+		height: 600px;
+		background-color: aqua;
+	}
+
+	/*This is a work around for no-flex box centering*/
+	.inside {
+		max-width: 300px;
+		background-color: gold;
+		margin: 0 auto;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="inside">
+			<p>This div is centered.</p>
+		</div>
+	</div>
+</body>
+</html>

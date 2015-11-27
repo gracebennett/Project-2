@@ -1,0 +1,454 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@font-face {
+    font-family: PlayfairDisplayBlackItalic;
+    src: url(fonts/PlayfairDisplay-BlackItalic.otf);
+}
+
+@font-face {
+    font-family: PlayfairDisplayItalic;
+    src: url(fonts/PlayfairDisplay-Italic.otf);
+}
+
+@font-face {
+    font-family: MontseerratLight;
+    src: url(fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: QuicksandLightItalic;
+    src: url(fonts/Quicksand-LightItalic.otf);
+}
+
+@font-face {
+    font-family: QuicksandLight;
+    src: url(fonts/Quicksand-Light.otf);
+}
+
+header {
+	background: url(images/RoryJess01.jpg) fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+.wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-left: 300px
+}
+
+.wrapperHead {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+	font-family: Montserrat;
+	font-size: 50px;
+	margin: 0;
+	padding-top: 99%;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	text-align: center;
+	text-shadow: 3px 3px 5px #343434;
+	border: 4px solid white;
+	border-top: none;
+}
+
+h2 {
+	color: white;
+	font-family: PlayfairDisplayBlackItalic;
+	font-size: 35px;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+	color: white;
+	font-family: MontseerratLight;
+	font-size: 38px;
+	padding: 0;
+	padding-left: 10px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h4 {
+	color: white;
+	font-family: QuicksandLightItalic;
+	font-size: 25px;
+	margin: 0;
+	padding-bottom: 10px;
+
+}
+
+p {
+	color: white;
+	font-family: QuicksandLight;
+	font-size: 18px;
+
+}
+
+
+
+#nav {
+	width: 250px;
+	height: 200px;
+	box-shadow: -5px -5px #d2aa3a;
+	background-color: #32355a;
+	margin-left: 2%;
+	margin-top: 2%;
+	padding: 25px;
+	position: fixed;
+}
+
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	position: relative;
+}
+
+#nav ul a {
+	color: #f8f8f8;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: MontseerratLight;
+	text-transform: uppercase;
+}
+
+#nav ul a:hover {
+	color: #cda43a;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-family: PlayfairDisplayBlackItalic;
+	text-transform: lowercase;
+}
+
+#nav ul li ul {
+	width: 200px;
+	height: 150px;
+	padding: 20px;
+	box-shadow: 5px 5px #de4d86;
+	padding-right: -20px;
+	background-color: #d1ceca;
+	position: absolute;
+	display: none;
+	text-align: right;
+}
+
+#nav ul li:hover ul {
+	display: inline-block;				
+}
+
+#nav ul li ul li {
+	display:list-item;
+}
+
+#nav ul li ul a {
+	color: white;
+	font-family: PlayfairDisplayItalic;
+	text-transform: lowercase;
+}
+
+#nav ul li ul a:hover {
+	color: #dc4d86;
+	letter-spacing: 0;
+	font-family: MontseerratLight;
+	text-transform: uppercase;
+}
+
+.about, .story, .boys, .appearance, .chemistry, .rory, .best, .worst, .finale, .socials, footer {
+	width: 100%;
+	float: left;
+	padding: 3% 5%;
+}
+
+.about {
+	background-color: #bbb8b4;
+}
+
+.about p {
+	color: white;
+	font-family: QuicksandLight;
+	font-size: 20px;
+}
+
+.about a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	margin-left: 15%;
+	font-family: PlayfairDisplayBlackItalic;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.about a:hover {
+	color: #bbb8b4;
+	background-color: white;
+}
+
+.story {
+	background-color: #d7aa3f;
+}
+
+.storyImg {
+	float: left;
+	width: calc(50% - 10px);
+	display: inline-block;
+	margin: 5px;
+	position: relative;
+}
+
+.storyImg img {
+	width: 100%;
+}
+
+.storyImg:hover .storyVideo {
+	display: block;
+}
+
+
+.storyVideo iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.storyVideo {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	object-fit: contain;
+	display: none;
+}
+
+.boys {
+	background-color: #d7753f;
+	padding-left: 250px;
+}
+
+div.boys div, div.appearance div, div.chemistry div, div.best div, div.worst div, .rory img {
+	width: 33%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-bottom: 25px;
+	padding: 10px;
+
+}
+
+.theboys {
+	width: 100%;
+}
+
+p.grade {
+	font-family: PlayfairDisplayItalic;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+.boys, .appearance, .chemistry, .rory, .best, .worst, .finale, .socials, footer {
+	padding-left: 290px;
+}
+
+.appearance {
+	background-color: #d74a3f;
+}
+
+.chemistry {
+	background-color: #965a79;
+}
+
+.rory {
+	background-color: #74b1b8;
+}
+
+.rory p {
+	clear: both;
+}
+
+.best {
+	background-color: #3ca265;
+}
+
+.worst {
+	background-color: #323232;
+}
+
+.finale {
+	background-color: #f1f1f1;
+	clear: both;
+	float: left;
+}
+
+.finale img {
+	float: left;
+	width: 30%;
+}
+
+.finale p {
+	font-size: 25px;
+	margin-left: 30px;
+	width: 60%;
+	float: left;
+	color: #323232;
+}
+
+.finale h2 {
+	color: #dc4d86;
+	font-size: 40px;
+}
+
+.finale a {
+	color: #d2aa3a;
+	text-decoration: none;
+	font-family: QuicksandLightItalic;
+}
+
+.finale a:hover {
+	color: #f1f1f1;
+	background-color: #d2aa3a;
+	text-decoration: none;
+	font-family: QuicksandLightItalic;
+}
+
+.socials {
+	background-color: #323459;
+	margin: 0 auto;
+}
+
+.socialsInput {
+	float: left;
+	width: 100%;
+}
+
+.twitter-timeline, .twitter-tweet {
+	width: 300px !important;
+	margin: 10px;
+	padding: 20px;
+	float: left;
+}
+
+#twitter-iframe {
+	display: inline-block;
+	width: 45%;
+}
+
+#twitter-iframe iframe {
+/*	position: static !important;
+	visibility: visible !important;
+	display: inline-block !important*/;
+	width: 100% !important;
+	height: 520px !important;
+	padding: 0px !important;
+	border: none !important;
+}
+
+#tweet-iframe {
+	display: inline-block;
+	width: 45%;
+}
+
+#tweet-iframe iframe {
+/*	position: static !important;
+	visibility: visible !important;
+	display: block !important;*/
+	width: 100% !important;
+	padding: 0px !important;
+	border: none !important;
+}
+
+#mc_embed_signup {
+	clear: both;
+	border: 10px solid #d2aa3a;
+	width: 90%;
+	margin: 0 auto;
+	margin: 10px;
+	padding: 50px;
+}
+
+#mc_embed_signup a {
+	color: #d2aa3a;
+	text-decoration: none;
+}
+
+#mc_embed_signup a:hover {
+	background-color: #d2aa3a;
+	padding: 5px;
+	color: white;
+}
+
+#mc_embed_signup p {
+	padding: 0;
+	margin: 0;
+}
+
+
+#mc_embed_signup_scroll {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#mc_embed_signup label {
+	color: white;
+	font-family: PlayfairDisplayBlackItalic;
+	padding: 20px;
+}
+
+#mc_embed_signup input {
+	width: 50%;
+	background-color: #323459;
+	color: white;
+	font-family: QuicksandLightItalic;
+	border: 2px solid #d2aa3a;
+	margin: 10px;
+	padding: 5px;
+}
+
+.clear {
+	width: 100%;
+}
+
+footer {
+	background-color: #4e1a1a;
+	width: 99%;
+
+}
+
+footer h2 {
+	padding: 30px;
+}
+
+footer img {
+	width: 49%;
+	margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
